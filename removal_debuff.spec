@@ -10,9 +10,18 @@ a = Analysis(
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[],
+    excludes=[
+        'matplotlib', 'scipy', 'pandas', 'PIL', 'Pillow',
+        'setuptools', 'pkg_resources', 'unittest', 'test',
+        'xmlrpc', 'pydoc', 'doctest', 'argparse',
+        'email', 'html', 'http', 'urllib', 'xml',
+        'logging', 'bz2', 'lzma', 'sqlite3',
+        'asyncio', 'concurrent', 'multiprocessing',
+        'lib2to3', 'distutils', 'ensurepip',
+        'tkinter.test', 'idlelib', 'turtledemo',
+    ],
     noarchive=False,
-    optimize=0,
+    optimize=2,
 )
 pyz = PYZ(a.pure)
 
