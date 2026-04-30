@@ -37,7 +37,7 @@ There are two common ways to create the executable:
 ### Option 1: Use the existing spec file
 
 ```powershell
-pyinstaller removal_debuff.spec
+python -m PyInstaller --noconsole --onefile removal_debuff.py
 ```
 
 ### Option 2: Build directly from the script
